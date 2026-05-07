@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>List of Students</h3>
+            <ul id="studentList"></ul>
+        </div>
+
+        <div class="main-content">
+            <div class="input-group">
+                <label>Enter Name</label>
+                <input type="text" id="studentName">
+            </div>
+            <div class="input-group">
+                <label>Enter Address</label>
+                <input type="text" id="studentAddress">
+            </div>
+            <div class="input-group">
+                <label>Enter Batch</label>
+                <input type="text" id="studentBatch">
+            </div>
+
+            <div class="button-row">
+                <button onclick="addStudent()">Add New Record</button>
+                <button onclick="deleteLastRecord()">Delete Record</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <p>Total Students: <span id="totalCount">0</span></p>
+            <p>Students in Batch B002: <span id="batchCount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
